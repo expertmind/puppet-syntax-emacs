@@ -375,4 +375,7 @@ The variable puppet-indent-level controls the amount of indentation.
        puppet-font-lock-syntax-table)
   (run-hooks 'puppet-mode-hook))
 
+;;;###autoload
+(add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))
+
 (provide 'puppet-mode)
